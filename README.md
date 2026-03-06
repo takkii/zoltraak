@@ -2,6 +2,8 @@
 
 ### psycho
 
-> neoruby-debuggerの派生版。
+This Debugger for Elixir, Dependency is Mason / ElixirLS.
 
-※ 異文化交流、Elixir用のデバッガーです。ElixirLSに依存しています。
+> origin neoruby-debugger.
+
+_※ Culture Shock!_
