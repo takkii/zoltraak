@@ -56,11 +56,7 @@ local function setup_elixir_adapter(dap)
       script = config.script
     end
 
-    if config.request == 'launch' then
-      args = {}
-    else
-      -- args = {'--open', '--port', config.port, '-c', '--', config.command, config.script}
-    end
+    args = {}
 
     local opts = {
       stdio = {nil, stdout},
@@ -86,7 +82,6 @@ local function setup_elixir_adapter(dap)
         end)
       end
     end)
-    -- Deleted, Server Wait Status.
   end
 end
 
@@ -98,7 +93,7 @@ local function setup_elixir_debugger_configuration(dap)
     task = "test",
     taskArgs = {"--trace"},
     request = "launch",
-    startApps = true, -- for Phoenix projects
+    startApps = true,
     projectDir = "${workspaceFolder}",
     requireFiles = {
       "test/**/test_helper.exs",
