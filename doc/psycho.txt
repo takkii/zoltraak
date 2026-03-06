@@ -32,7 +32,7 @@ Plug 'takkii/psycho'
 " start debug UI
 :UIOpen
 
-" You can choose 1, 2, or 3. It will start in launch mode.
+" It will start in launch mode.
 :Debug
 
 " UI hidden
