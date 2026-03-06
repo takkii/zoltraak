@@ -32,7 +32,7 @@ Plug 'takkii/psycho'
 " デバッグUI起動
 :UIOpen
 
-" 1,2,3を選択、ランチ状態で起動します。
+" ランチ状態で起動します。
 :Debug
 
 " UI 非表示
