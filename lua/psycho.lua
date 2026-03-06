@@ -55,7 +55,7 @@ local function setup_elixir_adapter(dap)
     else
       script = config.script
     end
-    
+
     if config.request == 'launch' then
       args = {}
     else
@@ -91,19 +91,7 @@ local function setup_elixir_adapter(dap)
 end
 
 local function setup_elixir_debugger_configuration(dap)
- dap.configurations.elixir = {
-  {
-    type = "mix_task",
-    name = "mix default task",
-    task = "run",
-    request = "launch",
-    taskArgs = {"lib/${file}"},
-    projectDir = "${workspaceRoot}",
-    env = {
-      ELS_ELIXIR_OPTS = "--name elixirls@localhost --cookie elixirls"
-    },
-      exitAfterTaskReturns = false
-  },
+  dap.configurations.elixir = {
   {
     type = "mix_task",
     name = "mix test",
@@ -115,18 +103,6 @@ local function setup_elixir_debugger_configuration(dap)
     requireFiles = {
       "test/**/test_helper.exs",
       "test/**/*_test.exs"
-    }
-  },
-  {
-    type = "mix_task",
-    name = "phoenix server",
-    task = "phx.server",
-    request = "launch",
-    projectDir = "${workspaceFolder}",
-    exitAfterTaskReturns = false,
-    debugAutoInterpretAllModules = false,
-    env = {
-      ELS_ELIXIR_OPTS = "--name elixirls@localhost --cookie elixirls"
     }
   },
 }
