@@ -5,5 +5,6 @@
   <h3><p>This Debugger for Elixir.</p></h3>
   <h4><p>Dependency is Mason / ElixirLS + <a href="https://github.com/Zeioth/compiler.nvim/wiki/DAP-support-elixir">Default Settings.</a></p></h4>
   <h4><p>origin <a href="https://github.com/takkii/neoruby-debugger">neoruby-debugger</a>. </p></h4>
-  <h4><p>※I Think Culture Shock⚡️</p></h4>
+  <h4><p>※ Think differenct.</p></h4>
+  <h4><p>psycho between neoruby-debugger configuration settings culture shock.⚡️</p></h4>
 </div>
