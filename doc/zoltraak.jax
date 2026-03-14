@@ -1,7 +1,7 @@
-*psycho*
+*zoltraak*
 
-version: 2026/03/07
-Author: takkii <karuma.reason@gmail.com>
+version: 2026/03/14
+Author: Takayuki Kamiyama <karuma.reason@gmail.com>
 License: MIT
 
 ==============================================================================
@@ -14,13 +14,13 @@ License: MIT
 
 " 外観などの前に設定
 
-lua require('psycho').setup()
+lua require('zoltraak').setup()
 
 ==============================================================================
 
 *プラグイン追加*
 
-Plug 'takkii/psycho'
+Plug 'takkii/zoltraak'
 
 ==============================================================================
 
