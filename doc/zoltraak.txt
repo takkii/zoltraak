@@ -1,0 +1,47 @@
+*zoltraak*
+
+version: 2026/03/14
+Author: Takayuki Kamiyama <karuma.reason@gmail.com>
+License: MIT
+
+==============================================================================
+
+*Install*
+
+==============================================================================
+
+*Example Settings*
+
+" appearance
+
+lua require('zoltraak').setup()
+
+==============================================================================
+
+*Plugins Add*
+
+Plug 'takkii/zoltraak'
+
+==============================================================================
+
+※The condition is that neoruby-debugger/command.vim is applied as source.
+
+" Stop cursor at line, breakpoint
+:BreakPoint
+
+" start debug UI
+:UIOpen
+
+" It will start in launch mode.
+:Debug
+
+" UI hidden
+:UIToggle
+
+" Release debug UI
+:UIClose
+
+" No UI, interactive
+:RPOpen
+
+==============================================================================
