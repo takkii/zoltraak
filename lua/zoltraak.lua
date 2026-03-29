@@ -64,6 +64,14 @@ local function setup_elixir_adapter(dap)
       detached = false
     }
 
+    -- Settings for each environment with a different OS.
+    if vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
+      elixir_ls_debugger = vim.fn.stdpath("data") .. '/mason/bin/elixir-ls-debugger.cmd'
+    else
+      elixir_ls_debugger = vim.fn.stdpath("data") .. '/mason/bin/elixir-ls-debugger'
+    end
+       
+
     handle, pid_or_err = vim.loop.spawn(elixir_ls_debugger, opts, function(code)
       handle:close()
       if code ~= 0 then
