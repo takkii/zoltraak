@@ -43,7 +43,7 @@ local function setup_elixir_adapter(dap)
     local handle
     local stdout = vim.loop.new_pipe(false)
     local pid_or_err
-    local elixir_ls_debugger = vim.fn.stdpath("data") .. '/mason/bin/elixir-ls-debugger';
+    local elixir_ls_debugger
     local waiting = config.waiting or 500
     local args
     local script
