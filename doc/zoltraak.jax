@@ -1,6 +1,6 @@
 *zoltraak*
 
-version: 2026/03/14
+version: 2026/03/30
 Author: Takayuki Kamiyama <karuma.reason@gmail.com>
 License: MIT
 
@@ -24,7 +24,10 @@ Plug 'takkii/zoltraak'
 
 ==============================================================================
 
-※ neoruby-debugger/command.vimをsourceで適用していることが条件です。
+※plugins/command.vimをsourceで適用していることが条件です。
+
+" Defxなどを有効化
+command URP :UpdateRemotePlugins
 
 " 行にカーソルを停止、ブレークポイント
 :BreakPoint
@@ -33,7 +36,7 @@ Plug 'takkii/zoltraak'
 :UIOpen
 
 " ランチ状態で起動します。
-:Debug
+:CON
 
 " UI 非表示
 :UIToggle
