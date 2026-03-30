@@ -1,6 +1,6 @@
 *zoltraak*
 
-version: 2026/03/14
+version: 2026/03/30
 Author: Takayuki Kamiyama <karuma.reason@gmail.com>
 License: MIT
 
@@ -24,7 +24,10 @@ Plug 'takkii/zoltraak'
 
 ==============================================================================
 
-※The condition is that neoruby-debugger/command.vim is applied as source.
+※The condition is that plugins/command.vim is applied as source.
+
+" Defx etc, Enable
+command URP :UpdateRemotePlugins
 
 " Stop cursor at line, breakpoint
 :BreakPoint
@@ -33,7 +36,7 @@ Plug 'takkii/zoltraak'
 :UIOpen
 
 " It will start in launch mode.
-:Debug
+:CON
 
 " UI hidden
 :UIToggle
