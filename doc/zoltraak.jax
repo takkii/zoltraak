@@ -1,7 +1,8 @@
 *zoltraak*
 
-version: 2026/03/30
-Author: Takayuki Kamiyama <karuma.reason@gmail.com>
+version: 2026/06/08
+Author: Takayuki Kamiyama
+mail to: karuma.reason@gmail.com
 License: MIT
 
 ==============================================================================
@@ -21,6 +22,12 @@ lua require('zoltraak').setup()
 *プラグイン追加*
 
 Plug 'takkii/zoltraak'
+
+※ Windows環境では動作しません。
+   UNIX環境を推奨します。
+
+※ .fileプロジェクトを使用してください。
+https://github.com/takkii/.file
 
 ==============================================================================
 
