@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>styleタグの例</title>
+  <style>
+    .zoltraak {
+      position: absolute;
+      top: 5.5vw;
+      left: 60vw;
+      animation: rotate-anime 3s linear infinite;
+    }
+
+    @keyframes rotate-anime {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotate-anime_y {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="zoltraak">
+    <p><img src="./images/zend.gif"></p>
+  </div>
+</body>
+
+</html>
