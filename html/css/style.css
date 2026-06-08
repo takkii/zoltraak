@@ -1,0 +1,40 @@
+.zoltraak_top {
+  position: absolute;
+  top: 2.5vw;
+  left: 42.5vw;
+  animation: rotate-anime 1s linear infinite;
+}
+
+.zoltraak_center {
+  position: absolute;
+  top: 17.5vw;
+  left: 42.5vw;
+  animation: rotate-anime 3s linear infinite;
+}
+
+.zoltraak_last {
+  position: absolute;
+  top: 32.5vw;
+  left: 42.5vw;
+  animation: rotate-anime 5s linear infinite;
+}
+
+@keyframes rotate-anime {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anime_y {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
